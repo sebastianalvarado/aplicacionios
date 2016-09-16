@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		806739FD1D8A282B00522424 /* NewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806739FC1D8A282B00522424 /* NewViewController.swift */; };
+		80673A001D8A2BE700522424 /* Usuarios.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806739FF1D8A2BE700522424 /* Usuarios.swift */; };
 		80CAA22E1D8241F700C716BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CAA22D1D8241F700C716BB /* AppDelegate.swift */; };
 		80CAA2301D8241F700C716BB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CAA22F1D8241F700C716BB /* ViewController.swift */; };
 		80CAA2331D8241F700C716BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80CAA2311D8241F700C716BB /* Main.storyboard */; };
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		806739FC1D8A282B00522424 /* NewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewViewController.swift; sourceTree = "<group>"; };
+		806739FF1D8A2BE700522424 /* Usuarios.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Usuarios.swift; sourceTree = "<group>"; };
 		80CAA22A1D8241F700C716BB /* AplicacioniOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AplicacioniOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80CAA22D1D8241F700C716BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		80CAA22F1D8241F700C716BB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -74,6 +78,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		806739FE1D8A2BC400522424 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				806739FF1D8A2BE700522424 /* Usuarios.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		80CAA2211D8241F700C716BB = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +109,8 @@
 		80CAA22C1D8241F700C716BB /* AplicacioniOS */ = {
 			isa = PBXGroup;
 			children = (
+				806739FE1D8A2BC400522424 /* Models */,
+				806739FC1D8A282B00522424 /* NewViewController.swift */,
 				80CAA22D1D8241F700C716BB /* AppDelegate.swift */,
 				80CAA22F1D8241F700C716BB /* ViewController.swift */,
 				80CAA2311D8241F700C716BB /* Main.storyboard */,
@@ -193,6 +207,7 @@
 				TargetAttributes = {
 					80CAA2291D8241F700C716BB = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 2FTR2G5WQL;
 					};
 					80CAA23D1D8241F800C716BB = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -256,6 +271,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80673A001D8A2BE700522424 /* Usuarios.swift in Sources */,
+				806739FD1D8A282B00522424 /* NewViewController.swift in Sources */,
 				80CAA2301D8241F700C716BB /* ViewController.swift in Sources */,
 				80CAA22E1D8241F700C716BB /* AppDelegate.swift in Sources */,
 			);
@@ -399,10 +416,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = AplicacioniOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cl.inacap.trabajo.AplicacioniOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -410,10 +430,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = AplicacioniOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cl.inacap.trabajo.AplicacioniOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -482,6 +505,7 @@
 				80CAA2541D8241F800C716BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		80CAA2551D8241F800C716BB /* Build configuration list for PBXNativeTarget "AplicacioniOSTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +514,7 @@
 				80CAA2571D8241F800C716BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		80CAA2581D8241F800C716BB /* Build configuration list for PBXNativeTarget "AplicacioniOSUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +523,7 @@
 				80CAA25A1D8241F800C716BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
